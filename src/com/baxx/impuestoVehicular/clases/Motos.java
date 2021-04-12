@@ -32,5 +32,12 @@ public class Motos extends Vehiculo{
         this.cilindraje = cilindraje;
     }
     
-   
+    public void verificacionTarifa(int cilindraje){
+        if (cilindraje < 125) {
+            super.setTarifa((float) 0.0);
+        }
+    }
+
 }
+   
+

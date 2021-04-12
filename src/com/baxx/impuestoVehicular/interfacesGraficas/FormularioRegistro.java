@@ -6,7 +6,7 @@ import com.baxx.impuestoVehicular.clases.Vehiculo;
 
 public class FormularioRegistro extends javax.swing.JInternalFrame {
 
-    Vehiculo nuevoVehiculo = new Vehiculo();
+    Vehiculo nuevoVehiculo;
     
     public FormularioRegistro() {
         initComponents();
@@ -390,7 +390,11 @@ public class FormularioRegistro extends javax.swing.JInternalFrame {
     
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String nombre = nombreTxt.getText()+" "+ apellidoTxt.getText();
+        
+        
         new Vehiculo(title, title, WIDTH, title, title);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
